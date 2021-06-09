@@ -8,6 +8,7 @@ This connects to Snowflake database: SNOWFLAKE_SAMPLE_DATA and extracts the TPCD
 
 https://docs.snowflake.com/en/user-guide/sample-data-tpcds.html
 
+These datasets will be useful for performance analysis, benchmarking in databricks platform, pandas library etc.
 ```
 
 # Using secrets in Databricks notebooks
