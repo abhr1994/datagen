@@ -9,3 +9,21 @@ This connects to Snowflake database: SNOWFLAKE_SAMPLE_DATA and extracts the TPCD
 https://docs.snowflake.com/en/user-guide/sample-data-tpcds.html
 
 ```
+
+# Using secrets in Databricks notebooks
+
+```
+If there are any credentials you want to avoid explicitly provide in the Databricks notebooks we can use the Databricks cli secrets feature to encode the secrets
+
+
+Commands:
+
+databricks secrets create-scope --scope datagen-secret --initial-manage-principal users
+
+databricks secrets write --key snowflake_user --string-value <your_user_name> --scope datagen-secret
+
+databricks secrets write --key snowflake_pass --string-value <your_password> --scope datagen-secret
+
+databricks secrets write --key snowflake_url --string-value <your_snowflake_url> --scope datagen-secret
+
+```
