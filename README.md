@@ -13,8 +13,9 @@ https://docs.snowflake.com/en/user-guide/sample-data-tpcds.html
 # Using secrets in Databricks notebooks
 
 ```
-If there are any credentials you want to avoid explicitly provide in the Databricks notebooks we can use the Databricks cli secrets feature to encode the secrets
+Inorder to avoid explicitly providing credentials in the Databricks notebooks we can use the Databricks cli secrets feature to encode the secrets
 
+Refrerence URL: https://docs.databricks.com/dev-tools/cli/secrets-cli.html
 
 Commands:
 
